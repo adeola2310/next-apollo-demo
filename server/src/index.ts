@@ -50,6 +50,8 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  playground: true,
+  introspection: true
 });
 const startServer = async () => {
   // Passing an ApolloServer instance to the `startStandaloneServer` function:

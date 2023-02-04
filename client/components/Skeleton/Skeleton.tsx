@@ -22,6 +22,7 @@ const Skeleton = styled.div`
 background-color: #f2f2f2;
 width: 100%;
 margin: auto;
+width:70%;
 border: 0;
 min-height:100px;
 border-radius: 3px;

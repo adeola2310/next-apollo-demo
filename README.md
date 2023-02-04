@@ -1,8 +1,9 @@
+## **Description**
+This purpose of  this project is to create a graphql api on a list of dummy data and consume these data on the client side
 
 ## **How to run this project with docker locally**
 *```Git clone "name of repo"```
 *```cd "name of repo"```
-*```docker-compose up```
 
 ## **Alternative approcah to run project**
 *```Git clone "name of repo"```

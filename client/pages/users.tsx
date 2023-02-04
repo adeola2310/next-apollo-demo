@@ -6,41 +6,46 @@ import SkeletonLoader from '../components/Skeleton/Skeleton'
 import Errorboundary from './errorboundary'
 import { ALL_USERS } from '../queries/getUsers'
 import NoUser from '../components/NoUser/NoUser'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Users = () => {
+    const offset = 0;
+    const [limit, setLimit] = useState<number>(20);
+    const [usersList, setUsersList] = useState<[]>([]);
     const { loading, error, data } = useQuery(ALL_USERS);
-    const [page, setPage] = useState<number>(0);
-    const numberPerPage = 20;
 
 
-    const loadMoreUsers = ()=>{
-        const nextPage = page + numberPerPage
-        setPage(nextPage);
-    }
+    useEffect(() => {
+        if(data){
+            setUsersList(data?.users?.slice(offset, limit + offset));
+        }
+    }, [offset, limit, data])
 
-    if (loading){
+    const loadMoreUsers = () => {
+        setLimit(limit + 20);
+    };
+
+    if (loading) {
         return <SkeletonLoader />
-    } 
-    if (error){
+    }
+    if (error) {
         return <Errorboundary />
-    } 
-    if(!data.users) {
-        return <NoUser/>
+    }
+    if (!data.users) {
+        return <NoUser />
     }
 
     return (
         <>
             <Grid data-testid="user-grid">
                 {
-                    data?.users?.slice(0, 10).map((user: any, i)=>(
+                    usersList?.map((user: any, i) => (
                         <UserCard key={i} user={user} />
                     ))
                 }
             </Grid>
-            <Button onClick={()=>loadMoreUsers()} />
+            <Button onClick={() => loadMoreUsers()} />
         </>
-
     )
 }
 

@@ -1,9 +1,7 @@
 #basic image
 FROM node:latest
 
-
-
-WORKDIR /Users/adeolaadekoyejo/Desktop/next-apollo-demo/client
+WORKDIR /app
 
 COPY package*.json yarn.lock ./
 

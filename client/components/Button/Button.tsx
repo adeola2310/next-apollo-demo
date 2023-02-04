@@ -8,7 +8,7 @@ export interface ButtonProps{
 const Button: FunctionComponent<ButtonProps>  = ({onClick}) => {
     return (
         <ButtonWrapper type="button" data-testid="more-button" onClick={onClick}>
-            Load more...
+            Load more
         </ButtonWrapper>
     )
 }

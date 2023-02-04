@@ -14,7 +14,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapper>
-        <Suspense fallback={<div><SkeletonLoader/></div>}>
+        <Suspense fallback={<Loader><SkeletonLoader/></Loader>}>
           <UsersComponent />
         </Suspense>
       </MainWrapper>
@@ -31,3 +31,10 @@ justify-content: center;
 align-items: center;
 margin-top: 3rem;
 `;
+
+const Loader = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+margin:auto;
+`

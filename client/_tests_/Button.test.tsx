@@ -5,6 +5,6 @@ import Button from '../components/Button/Button'
 describe('<Button/>', () => {
   it('should render the text in the button', () => {
     render(<Button onClick={jest.fn()}/>)
-    expect(screen.getByText('Load more...')).toBeInTheDocument();
+    expect(screen.getByText('Load more')).toBeInTheDocument();
   })
 })
