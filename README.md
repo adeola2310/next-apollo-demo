@@ -39,6 +39,8 @@ This purpose of  this project is to create a graphql api on a list of dummy data
 * Used a11y-plugins to catch accessibility mistakes
 * Followed through CI/CD best practices by making meamingful comits often
 
+## **App Preview**
+<img width="442" alt="Screenshot 2023-02-04 at 13 00 54" src="https://user-images.githubusercontent.com/25429341/216771084-d2c0294f-3f32-4a60-8c4e-a9a05ee453e9.png">
 
 ## **Activities Done**
 * Forked required Repo
