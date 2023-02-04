@@ -49,3 +49,4 @@ This purpose of  this project is to create a graphql api on a list of dummy data
 * Add Unit Tests using Jest and React Testing Library.
 *  Dockerize the server and client app and use docker-compose so that we can run the app locally using docker-compose.
 * Implement Lazyloading  / Infinite scrolls so that  you load 20 cards each time you click a ‘Load More’ button, which you would need to create. 
+* cypress test
