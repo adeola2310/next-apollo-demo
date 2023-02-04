@@ -4,6 +4,8 @@ This purpose of  this project is to create a graphql api on a list of dummy data
 ## **How to run this project with docker locally**
 *```Git clone "name of repo"```
 *```cd "name of repo"```
+```cd "docker run -p 4000:4000""```
+```cd "docker run -p 3000:3000""```
 
 ## **Alternative approcah to run project**
 *```Git clone "name of repo"```
