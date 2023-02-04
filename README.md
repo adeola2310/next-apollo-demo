@@ -39,7 +39,6 @@ This purpose of  this project is to create a graphql api on a list of dummy data
 * Used a11y-plugins to catch accessibility mistakes
 * Followed through CI/CD best practices by making meamingful comits often
 
-
 ## **Activities Done**
 * Forked required Repo
 * Updated Nextjs, React, Apollo, Graphql to the latest version
